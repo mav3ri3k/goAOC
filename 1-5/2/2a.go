@@ -38,17 +38,3 @@ func roundScore(a byte, b byte) int {
   }
   return 0
 }
-
-func main() {
-  rounds,_ := os.ReadFile("2.txt")
-  var totalScore int 
-  for _,round := range strings.Split(string(rounds), "\n") {
-    score := 0 
-    if round != "" {
-      score = roundScore(round[0], round[2]) 
-    } 
-    totalScore += score
-    fmt.Println(round, " ", score)
-  }
-  fmt.Println(totalScore)
-}

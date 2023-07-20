@@ -16,6 +16,7 @@ func part1() {
   }
 }
 
+
 func main() {
 	part1()
 }
